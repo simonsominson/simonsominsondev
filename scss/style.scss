@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+$colorWhite: rgb(243, 243, 243);
+$colorDarkViolet: rgb(54, 63, 91);
+$colorDark: rgba(0, 0, 0, 0.5);
+
+body {
+    background-color: $colorDarkViolet;
+    height: 100vmax;
+    font-family: 'Roboto', sans-serif;
+}
+//HEADER //
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: $colorDark 1px solid;
+    padding-right: 1.5rem;
+    background-color: $colorDark;
+}
+.logo {
+    width: 12rem;
+    height: 10rem;    
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+        li {
+            list-style: none;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $colorWhite;
+}       
+        a {
+            text-decoration: none;
+            color: $colorWhite;
+        }
+}
+//FIN HEADER//
+
+h2 {
+    margin-left: 6rem;
+    margin-block: 8rem;
+    font-size: 3.7rem;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-shadow: .5px .5px 4px black;
+    color: rgb(217, 207, 13);
+}
+//HOME //
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    .name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 1rem;
+        font-weight: bolder;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 4rem;
+            color: $colorWhite;
+            position: relative;
+            top: 2rem;
+            right: 8rem;
+        }
+        span {
+            color: black;
+        }
+        
+        .frontend {
+            font-size: 2.5rem;
+            color: $colorWhite;
+            margin-top: 1rem;
+        }
+
+        .imgfront {
+            max-width: 80%;
+            position: relative;
+            left: 8rem;
+        }
+}
+.text {
+    font-size: 1.8rem;
+    font-weight: 550;
+    margin: 0 10%;
+    text-align: center;
+    color: $colorWhite;
+    margin-block: 4rem;
+}
+//FIN HOME//
+
+//QUIEN SOY //
+.quiensoy {
+        display: flex;
+        flex-direction: column;
+    .img-yo {
+        border-radius: 50%;
+        width: 20%;
+        height: auto;
+        margin: 0 auto;
+        border: 4px solid $colorDark;
+    }
+}
+
+.title-vir {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1rem;
+    color: $colorWhite;
+    margin-bottom: 2rem;
+}
+
+ul {
+    li {
+        list-style-type: none;
+        text-align: center;
+        font-size: 1.2rem;
+        color: $colorWhite;
+        padding: 10px;
+    }
+    .animate__animated {
+        animation-duration: 4s;
+        animation-iteration-count: 4;
+        animation-fill-mode: both;
+
+        }
+}
+
+
+
+// PROYECTOS //
+
+.container-proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    
+    .cardtwo {
+        width: 410px;
+        height: 30rem;
+        border: $colorWhite 4px solid;
+        margin-inline: auto;
+        .title-proyecto {
+            text-align: center;
+            padding: 1rem;
+            color: $colorWhite;
+            font-size: 1.4rem;
+        }
+        .proyectoimg {
+            height: auto;
+            width: 90%;
+            padding: 5%;
+            margin-inline: 2.5%;
+            background-color: $colorDark;
+            border-top-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+        }
+        .proyectoimg:hover {
+            width: 100%;
+            margin-inline: auto;
+        }
+        .text-proyecto {
+            margin: 1.5rem 10px;
+            text-align: center;
+            color: $colorWhite;
+        }
+        .small {
+            font-size: 1rem;
+            color: white;
+            padding: .2rem;
+            margin-left: 7.5rem;
+            margin-top: .7rem;
+            text-decoration: underline;
+            
+        }
+        .url-proyecto {
+            color: $colorDark;
+            text-decoration: none;
+        }
+        .url-proyecto p {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            background-color: $colorWhite;
+            color: $colorDark;
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 80%;
+            margin-top: .5rem;
+            margin: 0 auto;
+        }
+        .url-proyecto p:hover {
+            background-color: $colorDark;
+            color: $colorWhite;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+//FIN PROYECTOS //
+
+// HERRAMIENTAS //
+
+.container-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.card { 
+    border: $colorDark 4px solid;
+    height: 200px;
+    width: 270px;
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.4rem;
+    margin-inline: auto;
+    font-weight: bolder;
+    color: $colorWhite;
+    h3 {
+        font-family: serif;
+    }
+    .bx {
+        font-size: 3.5rem;
+        box-shadow: 2px 2px .2rem $colorWhite;
+        text-shadow: 1px 1px .5rem $colorDark;
+        margin-top: 2.7rem;
+    }
+    .bxl-html5 {
+        color: rgba(243,121,63,0.99);
+        }
+    .bxl-css3 { 
+        color: rgba(14,86,168,0.99);
+        }
+    .bxl-bootstrap {
+        color: rgba(115,25,170,0.99);
+        }
+    .bxl-git {
+        color :rgba(156,60,13,0.99);
+        }
+    .bxl-sass {
+        color: rgba(164,21,191,0.99);  
+        }
+    .bxl-github {
+        color: rgba(10,4,10,0.99);
+        }
+    .bxl-javascript {
+        color: rgba(220,228,13,0.99);
+        }
+    .bx-library {
+        color: rgba(197,7,23,0.99);
+        }
+    .animate__animated {
+        animation-duration: 6s;
+        animation-iteration-count: 4;
+        animation-delay: 2s;
+        animation-fill-mode: forwards; 
+        }
+}
+
+//FORMULARIO //
+
+form {
+    width: 25rem;
+    height: 370px;
+    padding: 20px;
+    margin: 6rem auto;
+    border-radius: 15px;
+    background-color: $colorDark;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 15px 10px 5px $colorDark;
+    h4 {
+        color: $colorWhite;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .forms-input {
+        width: 60%;
+        height: 2rem;
+        margin: auto;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        background-color: $colorWhite;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        
+    }
+    textarea {
+        width: 60%;
+        resize: none;
+        text-align: center;
+        border-radius: 5px;
+        background-color: $colorWhite;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        margin: auto;
+    }
+    .button-form {
+        width: 30%;
+        padding: .5rem;
+        margin: 2.5rem auto;
+        border-radius: 5px;
+        background-color: $colorWhite;
+        color: $colorDarkViolet;
+        border: .5px solid $colorDarkViolet;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+.imgcontact {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    left: 0;
+}
+.imgcontact1 {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    right: 0;
+}
+
+
+// FOOTER //
+.footer {
+    height: 100px;
+    background-color: $colorDark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .contacto a {
+        text-decoration: none;
+    }
+    .bx {
+        font-size: 1.8rem;  
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .bx:hover {
+        background-color: $colorWhite;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .bxl-linkedin-square {
+        color: rgba(9, 93, 228, 0.8);
+        margin: 0 1.7rem;
+    }
+    .bxl-github {
+        color: rgba(9, 93, 228, 0.8);
+        margin: 0 1.7rem;
+    }
+
+    .bxl-whatsapp-square {
+        color: rgba(3, 181, 62, 0.8);
+        margin: 0 1.7rem;
+    }
+    h5 {
+        font-size: 1rem;
+        text-align: center;
+        color: $colorWhite;
+    }
+    h5:hover, h6:hover {
+        background-color: $colorDarkViolet;
+    }
+    h6 {
+        font-size: .8rem;
+        letter-spacing: 1.2px;
+        text-align: center;
+        color: $colorWhite;
+    }
+
+}
+//MENU HAMBURGESA Y MEDIAS QUERIES//
+.abrir-menu {
+    display: none;
+    color: $colorWhite;
+}
+.cerrar-menu {
+    display: none;
+    color: $colorWhite;
+}
+
+@media screen and (max-width: 875px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        font-size: 2rem;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .navbar {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .cerrado {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        bottom: 2;
+        right: 0;
+        background-color: $colorDarkViolet;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+    .cerrar-menu {
+        display: block;
+    }
+    .home {
+        gap: 0;
+        h1 {
+            right: 0;
+        }
+        .frontend {
+            font-size: 1.2rem;
+            margin-top: 0;
+            margin-left: 4rem;
+        }
+        .imgfront {
+           position: inherit;
+           margin-top: 1rem;
+        }
+    }
+    .quiensoy {
+        .img-yo {
+            width: 20%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+    h2 {
+        font-size: 3rem;
+    }
+
+    .container-card {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .container-proyectos {
+        grid-template-columns: 1fr;
+        .cardtwo {
+            height: 31rem;
+        }
+    }
+
+    form {
+        width: 20rem;
+        height: 370px;
+        padding: 20px;
+        margin: 6rem auto;
+        border-radius: 15px;
+        .imgcontact {
+            display: none;
+        }
+        .imgcontact1 {
+            display: none;
+        }
+        .button-form {
+            margin-top: 3rem;
+            font-size: .8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home {
+
+    
+        h1 {
+            font-size: 2.4rem;
+            padding: 4rem;
+        }
+        
+    }
+
+    h2 {
+            margin-left: 1rem;
+            margin-block: 5rem;
+            font-size: 2rem;
+    }
+    .quiensoy {
+        .img-yo {
+            width: 35%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+    .container-proyectos {
+        gap: .8rem;
+        .cardtwo {
+            width: 310px;
+            height: 30rem;
+            border: $colorWhite 2px solid;
+            margin-inline: auto;
+            .small {
+                font-size: 1rem;
+                margin-left: 4.8rem;
+            }
+        }
+        
+    }
+    form {
+            width: 10rem;
+            height: 370px;
+            padding: 20px;
+            margin: 6rem auto;
+            border-radius: 15px;
+            h4 {
+                font-size: 1.2rem;
+            }
+            .forms-input {
+                width: 100%;
+            }
+            #consultas {
+                width: 100%;
+            }
+            .button-form {
+                width: 60%;
+                margin-top: 4rem;
+            }
+            .imgcontact, .imgcontact1 {
+                display: none;
+            }
+    }
+}
+// FIN MENU HAMBURGESA Y MEDIAS QUERIES//

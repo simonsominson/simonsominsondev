@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(54, 63, 91);
+  height: 100vmax;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+  border-top-left-radius: rgba(0, 0, 0, 0.5) 1px solid;
+  padding-right: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 12rem;
+  height: 10rem;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.navbar ul li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(243, 243, 243);
+}
+.navbar ul a {
+  text-decoration: none;
+  color: rgb(243, 243, 243);
+}
+
+h2 {
+  margin-left: 6rem;
+  margin-block: 8rem;
+  font-size: 3.7rem;
+  font-family: monospace;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 4px black;
+  color: rgb(217, 207, 13);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.home .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 1rem;
+  font-weight: bolder;
+}
+.home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 4rem;
+  color: rgb(243, 243, 243);
+  position: relative;
+  top: 2rem;
+  right: 8rem;
+}
+.home span {
+  color: black;
+}
+.home .frontend {
+  font-size: 2.5rem;
+  color: rgb(243, 243, 243);
+  margin-top: 1rem;
+}
+.home .imgfront {
+  max-width: 80%;
+  position: relative;
+  left: 8rem;
+}
+
+.text {
+  font-size: 1.8rem;
+  font-weight: 550;
+  margin: 0 10%;
+  text-align: center;
+  color: rgb(243, 243, 243);
+  margin-block: 4rem;
+}
+
+.quiensoy {
+  display: flex;
+  flex-direction: column;
+}
+.quiensoy .img-yo {
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
+  margin: 0 auto;
+  border: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+.title-vir {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1rem;
+  color: rgb(243, 243, 243);
+  margin-bottom: 2rem;
+}
+
+ul li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(243, 243, 243);
+  padding: 10px;
+}
+ul .animate__animated {
+  animation-duration: 4s;
+  animation-iteration-count: 4;
+  animation-fill-mode: both;
+}
+
+.container-proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+.container-proyectos .cardtwo {
+  width: 410px;
+  height: 30rem;
+  border: rgb(243, 243, 243) 4px solid;
+  margin-inline: auto;
+}
+.container-proyectos .cardtwo .title-proyecto {
+  text-align: center;
+  padding: 1rem;
+  color: rgb(243, 243, 243);
+  font-size: 1.4rem;
+}
+.container-proyectos .cardtwo .proyectoimg {
+  height: auto;
+  width: 90%;
+  padding: 5%;
+  margin-inline: 2.5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.container-proyectos .cardtwo .proyectoimg:hover {
+  width: 100%;
+  margin-inline: auto;
+}
+.container-proyectos .cardtwo .text-proyecto {
+  margin: 1.5rem 10px;
+  text-align: center;
+  color: rgb(243, 243, 243);
+}
+.container-proyectos .cardtwo .small {
+  font-size: 1rem;
+  color: white;
+  padding: 0.2rem;
+  margin-left: 7.5rem;
+  margin-top: 0.7rem;
+  text-decoration: underline;
+}
+.container-proyectos .cardtwo .url-proyecto {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.container-proyectos .cardtwo .url-proyecto p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background-color: rgb(243, 243, 243);
+  color: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 80%;
+  margin-top: 0.5rem;
+  margin: 0 auto;
+}
+.container-proyectos .cardtwo .url-proyecto p:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(243, 243, 243);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.card {
+  border: rgba(0, 0, 0, 0.5) 4px solid;
+  height: 200px;
+  width: 270px;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  margin-inline: auto;
+  font-weight: bolder;
+  color: rgb(243, 243, 243);
+}
+.card h3 {
+  font-family: serif;
+}
+.card .bx {
+  font-size: 3.5rem;
+  box-shadow: 2px 2px 0.2rem rgb(243, 243, 243);
+  text-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.5);
+  margin-top: 2.7rem;
+}
+.card .bxl-html5 {
+  color: rgba(243, 121, 63, 0.99);
+}
+.card .bxl-css3 {
+  color: rgba(14, 86, 168, 0.99);
+}
+.card .bxl-bootstrap {
+  color: rgba(115, 25, 170, 0.99);
+}
+.card .bxl-git {
+  color: rgba(156, 60, 13, 0.99);
+}
+.card .bxl-sass {
+  color: rgba(164, 21, 191, 0.99);
+}
+.card .bxl-github {
+  color: rgba(10, 4, 10, 0.99);
+}
+.card .bxl-javascript {
+  color: rgba(220, 228, 13, 0.99);
+}
+.card .bx-library {
+  color: rgba(197, 7, 23, 0.99);
+}
+.card .animate__animated {
+  animation-duration: 6s;
+  animation-iteration-count: 4;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+form {
+  width: 25rem;
+  height: 370px;
+  padding: 20px;
+  margin: 6rem auto;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.5);
+}
+form h4 {
+  color: rgb(243, 243, 243);
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+form .forms-input {
+  width: 60%;
+  height: 2rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: rgb(243, 243, 243);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+form textarea {
+  width: 60%;
+  resize: none;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgb(243, 243, 243);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin: auto;
+}
+form .button-form {
+  width: 30%;
+  padding: 0.5rem;
+  margin: 2.5rem auto;
+  border-radius: 5px;
+  background-color: rgb(243, 243, 243);
+  color: rgb(54, 63, 91);
+  border: 0.5px solid rgb(54, 63, 91);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.imgcontact {
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  left: 0;
+}
+
+.imgcontact1 {
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  right: 0;
+}
+
+.footer {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .contacto a {
+  text-decoration: none;
+}
+.footer .bx {
+  font-size: 1.8rem;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer .bx:hover {
+  background-color: rgb(243, 243, 243);
+  border-radius: 50%;
+  padding: 5px;
+}
+.footer .bxl-linkedin-square {
+  color: rgba(9, 93, 228, 0.8);
+  margin: 0 1.7rem;
+}
+.footer .bxl-github {
+  color: rgba(9, 93, 228, 0.8);
+  margin: 0 1.7rem;
+}
+.footer .bxl-whatsapp-square {
+  color: rgba(3, 181, 62, 0.8);
+  margin: 0 1.7rem;
+}
+.footer h5 {
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(243, 243, 243);
+}
+.footer h5:hover, .footer h6:hover {
+  background-color: rgb(54, 63, 91);
+}
+.footer h6 {
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: rgb(243, 243, 243);
+}
+
+.abrir-menu {
+  display: none;
+  color: rgb(243, 243, 243);
+}
+
+.cerrar-menu {
+  display: none;
+  color: rgb(243, 243, 243);
+}
+
+@media screen and (max-width: 875px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .navbar {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .cerrado {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 2;
+    right: 0;
+    background-color: rgb(54, 63, 91);
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+  .cerrar-menu {
+    display: block;
+  }
+  .home {
+    gap: 0;
+  }
+  .home h1 {
+    right: 0;
+  }
+  .home .frontend {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-left: 4rem;
+  }
+  .home .imgfront {
+    position: inherit;
+    margin-top: 1rem;
+  }
+  .quiensoy .img-yo {
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .container-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .container-proyectos {
+    grid-template-columns: 1fr;
+  }
+  .container-proyectos .cardtwo {
+    height: 31rem;
+  }
+  form {
+    width: 20rem;
+    height: 370px;
+    padding: 20px;
+    margin: 6rem auto;
+    border-radius: 15px;
+  }
+  form .imgcontact {
+    display: none;
+  }
+  form .imgcontact1 {
+    display: none;
+  }
+  form .button-form {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home h1 {
+    font-size: 2.4rem;
+    padding: 4rem;
+  }
+  h2 {
+    margin-left: 1rem;
+    margin-block: 5rem;
+    font-size: 2rem;
+  }
+  .quiensoy .img-yo {
+    width: 35%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .container-proyectos {
+    gap: 0.8rem;
+  }
+  .container-proyectos .cardtwo {
+    width: 310px;
+    height: 30rem;
+    border: rgb(243, 243, 243) 2px solid;
+    margin-inline: auto;
+  }
+  .container-proyectos .cardtwo .small {
+    font-size: 1rem;
+    margin-left: 4.8rem;
+  }
+  form {
+    width: 10rem;
+    height: 370px;
+    padding: 20px;
+    margin: 6rem auto;
+    border-radius: 15px;
+  }
+  form h4 {
+    font-size: 1.2rem;
+  }
+  form .forms-input {
+    width: 100%;
+  }
+  form #consultas {
+    width: 100%;
+  }
+  form .button-form {
+    width: 60%;
+    margin-top: 4rem;
+  }
+  form .imgcontact, form .imgcontact1 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

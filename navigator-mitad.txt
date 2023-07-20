@@ -1,0 +1,28 @@
+if (navigator.geolocation) {
+
+    navigator.geolocation.getCurrentPosition(success, error, options);
+
+
+} else {
+    alert("No fue posible obtener tu ip");
+}
+
+function options(options) {
+    enableHightAccuracy: true;
+    timeout: 5000;
+    maximunAge: 0;
+
+};
+
+function success(geolocationPosition) {
+
+    let coords = geolocationPosition.coords;
+    let lat = coords.latitude;
+    let lon = coords.longitude;
+    console.log(lat, lon);
+    
+}
+
+function error(error) {
+    console.log(error);
+}

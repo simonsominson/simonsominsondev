@@ -130,9 +130,8 @@ ul li {
   padding: 10px;
 }
 ul .animate__animated {
-  animation-duration: 4s;
-  animation-iteration-count: 8;
-  animation-fill-mode: both;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
 }
 
 .container-proyectos {
@@ -253,9 +252,8 @@ ul .animate__animated {
   color: rgba(197, 7, 23, 0.99);
 }
 .card .animate__animated {
-  animation-duration: 6s;
-  animation-iteration-count: 8;
-  animation-fill-mode: forwards;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
 }
 
 form {
@@ -328,6 +326,7 @@ form .button-form {
 
 .footer {
   height: 100px;
+  width: auto;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;

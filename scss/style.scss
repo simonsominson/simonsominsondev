@@ -137,10 +137,8 @@ ul {
         padding: 10px;
     }
     .animate__animated {
-        animation-duration: 4s;
-        animation-iteration-count: 8;
-        animation-fill-mode: both;
-
+        animation-duration: 10s;
+        animation-iteration-count: 3;
         }
 }
 
@@ -271,9 +269,8 @@ ul {
         color: rgba(197,7,23,0.99);
         }
     .animate__animated {
-        animation-duration: 6s;
-        animation-iteration-count: 8;
-        animation-fill-mode: forwards; 
+        animation-duration: 10s;
+        animation-iteration-count: 3;
         }
 }
 
@@ -350,6 +347,7 @@ form {
 // FOOTER //
 .footer {
     height: 100px;
+    width: auto;
     background-color: $colorDark;
     display: flex;
     flex-direction: column;

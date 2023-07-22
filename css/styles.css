@@ -130,7 +130,7 @@ ul li {
 }
 ul .animate__animated {
   animation-duration: 4s;
-  animation-iteration-count: 4;
+  animation-iteration-count: 8;
   animation-fill-mode: both;
 }
 
@@ -253,8 +253,7 @@ ul .animate__animated {
 }
 .card .animate__animated {
   animation-duration: 6s;
-  animation-iteration-count: 4;
-  animation-delay: 2s;
+  animation-iteration-count: 8;
   animation-fill-mode: forwards;
 }
 
@@ -496,7 +495,7 @@ form .button-form {
     gap: 0.8rem;
   }
   .container-proyectos .cardtwo {
-    width: 310px;
+    width: 290px;
     height: 30rem;
     border: rgb(243, 243, 243) 2px solid;
     margin-inline: auto;

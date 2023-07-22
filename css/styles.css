@@ -8,6 +8,7 @@
 body {
   background-color: rgb(54, 63, 91);
   height: 100vmax;
+  width: auto;
   font-family: "Roboto", sans-serif;
 }
 

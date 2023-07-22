@@ -271,6 +271,7 @@ ul {
     .animate__animated {
         animation-duration: 10s;
         animation-iteration-count: 3;
+        animation-fill-mode: initial;
         }
 }
 
